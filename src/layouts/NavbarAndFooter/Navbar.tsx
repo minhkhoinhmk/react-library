@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export const Navbar: React.FC<{}> = () => {
   return (
@@ -19,30 +20,21 @@ export const Navbar: React.FC<{}> = () => {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a
-                className="nav-link"
-                href="https://github.com/minhkhoinhmk/react-library"
-              >
+              <NavLink className="nav-link" to="/home">
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link"
-                href="https://github.com/minhkhoinhmk/react-library"
-              >
+              <NavLink className="nav-link" to="/search">
                 Search Books
-              </a>
+              </NavLink>
             </li>
           </ul>
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a
-                className="nav-link"
-                href="https://github.com/minhkhoinhmk/react-library"
-              >
+              <NavLink className="nav-link" to="/search">
                 Sign In
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
